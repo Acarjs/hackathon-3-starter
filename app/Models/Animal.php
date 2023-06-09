@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Animal extends Model
 {
     use HasFactory;
+    public $fillable = ['name'];
 
     public function owner()
     {
@@ -18,6 +19,4 @@ class Animal extends Model
     {
         return $this->belongsTo(Image::class);
     }
-
-    
 }

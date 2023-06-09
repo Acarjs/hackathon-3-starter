@@ -12,12 +12,13 @@ class IndexController extends Controller
         $search = $request->input('search');
         $animals = [];
 
-        if(isset($search))
-        {
+        if (isset($search)) {
             $animals = Animal::query()
-                        ->where('name','like','%' . $search . '%')
-                        ->limit(20)
-                        ->get();
+                ->with('owner', 'image')
+                ->where('name', 'like', '%' . $search . '%')
+                ->orderBy('name')
+                ->limit(20)
+                ->get();
         }
 
 
