@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Image extends Model
 {
     use HasFactory;
+
+    public function animal()
+    {
+        return $this->belongsTo(Animal::class);
+    }
+    
 }
