@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Owner extends Model
 {
     use HasFactory;
+
+    public function animals()
+    {
+        return $this->hasMany(Animal::class);
+    }
+
+    public $fillable = [
+        'first_name',
+        'surname',
+        'email',
+        'phone',
+        'address',
+    ];
 }
