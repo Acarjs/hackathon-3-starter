@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('animals', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->unsignedBigInteger('image_id')->nullable();
             $table->unsignedBigInteger('owner_id')->nullable();
             $table->string('name')->nullable();
@@ -18,8 +18,6 @@ return new class extends Migration
             $table->integer('age')->nullable();
             $table->integer('weight')->nullable();
             $table->timestamps();
-
-            $table->foreign('owner_id')->references('id')->on('owners')->onDelete('cascade');
         });
     }
 
