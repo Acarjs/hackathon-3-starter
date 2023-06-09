@@ -13,12 +13,4 @@ class Owner extends Model
     {
         return $this->hasMany(Animal::class);
     }
-
-    public $fillable = [
-        'first_name',
-        'surname',
-        'email',
-        'phone',
-        'address',
-    ];
 }
