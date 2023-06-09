@@ -13,8 +13,4 @@ class Image extends Model
     {
         return $this->hasMany(Animal::class);
     }
-
-    public $fillable = [
-        'path'
-    ];
 }
