@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\AnimalController;
 use App\Http\Controllers\IndexController;
-use App\Http\Controllers\SearchController;
+use App\Http\Controllers\VisitController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 

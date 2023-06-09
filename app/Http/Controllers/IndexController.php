@@ -23,7 +23,9 @@ class IndexController extends Controller
 
 
 
-
-        return view('index', compact('animals'));
+    
+        return view('index',compact('animals'));
     }
+
+    
 }

@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
     box-sizing: border-box;
 }
 
 html {
     font-size: 16px;
-    font-family: "Comfortaa", cursive;
-    color: #222222;
+    font-family: "Ubuntu", sans-serif;
 }
 
 body {
@@ -20,21 +20,19 @@ body {
 body::before {
     content: "";
     flex-grow: 1;
-    background: transparent url("/img/bg-left.jpg") right top/auto 100%
-        no-repeat;
+
     opacity: 0.5;
 }
 
 body::after {
     content: "";
     flex-grow: 1;
-    background: transparent url("/img/bg-right.jpg") left top/auto 100%
-        no-repeat;
+
     opacity: 0.5;
 }
 
 .page-content {
-    width: 800px;
+    /* width: 800px; */
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -97,7 +95,13 @@ header > div {
 }
 
 .search-form .results .result:nth-child(odd) {
-    background-color: #efefef;
+    background-color: #eee2de;
+    border-radius: 10px;
+}
+
+.search-form .results .result:nth-child(even) {
+    background-color: #fff4f4;
+    border-radius: 10px;
 }
 
 .search-form .results .result .img {
@@ -192,7 +196,7 @@ header > div {
 .form-actions button,
 .form-actions input[type="submit"],
 .form-actions a {
-    font-family: "Comfortaa", cursive;
+    font-family: "Ubuntu", sans-serif;
     font-size: 1em;
     padding: 0.5em 1em;
     background-color: #348fb9;
