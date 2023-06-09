@@ -14,10 +14,13 @@ class IndexController extends Controller
 
         if (isset($search)) {
             $animals = Animal::query()
+                ->with('owner', 'image')
                 ->where('name', 'like', '%' . $search . '%')
+                ->orderBy('name')
                 ->limit(20)
                 ->get();
         }
+
 
 
 
