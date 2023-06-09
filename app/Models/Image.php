@@ -9,9 +9,8 @@ class Image extends Model
 {
     use HasFactory;
 
-    public function animal()
+    public function animals()
     {
         return $this->belongsTo(Animal::class);
     }
-    
 }
