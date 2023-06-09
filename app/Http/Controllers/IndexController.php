@@ -20,9 +20,11 @@ class IndexController extends Controller
                         ->get();
         }
 
-        
 
+
+    
         return view('index',compact('animals'));
     }
 
+    
 }

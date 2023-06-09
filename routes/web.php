@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\AnimalController;
 use App\Http\Controllers\IndexController;
-use App\Http\Controllers\SearchController;
+use App\Http\Controllers\VisitController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,10 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [IndexController::class,'index'])->name('index');
+
+// Route::get('/animal/{id}/{visit_id?}', [AnimalController::class,'show'])->name('animal.show');
+
+// Route::post('/visit/{animal_id}', [VisitController::class,'store'])->name('visit.store');
 
 
 
